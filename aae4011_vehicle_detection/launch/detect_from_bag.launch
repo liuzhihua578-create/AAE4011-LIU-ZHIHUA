@@ -1,0 +1,15 @@
+<launch>
+  <arg name="bag_path" default="" />
+  <arg name="image_topic" default="/hikcamera/image_2/compressed" />
+  <arg name="conf_threshold" default="0.30" />
+  <arg name="model" default="yolov8n.pt" />
+
+  <node pkg="rosbag" type="play" name="bag_play" args="--clock $(arg bag_path)" output="screen" />
+
+  <node pkg="aae4011_vehicle_detection" type="vehicle_detector_node.py" name="vehicle_detector_node" output="screen">
+    <param name="image_topic" value="$(arg image_topic)" />
+    <param name="conf_threshold" value="$(arg conf_threshold)" />
+    <param name="model" value="$(arg model)" />
+  </node>
+</launch>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>aae4011_vehicle_detection</name>
+  <version>0.1.0</version>
+  <description>ROS rosbag vehicle detection pipeline with streaming bag player and YOLO-based detector.</description>
+
+  <maintainer email="student@example.com">Student</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  <depend>rosbag</depend>
+
+  <exec_depend>python3</exec_depend>
+
+  <export>
+  </export>
+</package>
+
