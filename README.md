@@ -140,6 +140,12 @@ An OpenCV window named `Vehicle Detection (ROS)` should appear. Press **ESC** to
 
 ## 6. Sample Results
 
+<img width="546" height="160" alt="image" src="https://github.com/user-attachments/assets/03979a9f-088a-40f3-993f-4420ac20f6e1" />
+
+<img width="1659" height="1318" alt="image" src="https://github.com/user-attachments/assets/9b7d14b8-cc49-436d-acaf-93810e1eb5d7" />
+
+
+
 ### 6.1 Image extraction summary (total frames, resolution, topic name)
 
 Use `scripts/bag_extract_and_report.py` to auto-pick (or explicitly set) a `sensor_msgs/CompressedImage` topic, summarize frame count/resolution/duration/FPS, and optionally export frames as image files.
